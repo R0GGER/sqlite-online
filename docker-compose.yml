@@ -1,0 +1,9 @@
+services:
+  sqlite-online:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sqlite-online-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
